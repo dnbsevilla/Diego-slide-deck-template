@@ -1,82 +1,536 @@
-<html>
+	<!DOCTYPE HTML>
+	<!-- <html lang="en-US"> -->
+	<html lang="en-US" class="fade">
+	<!-- 
+	  ^ a class of "fade" makes slides fade smoothly into one another
+	 -->
+	<!-- <html lang="en-US" class="nonumbers"> -->
+	<!-- 
+	  If you want no numbers on the slides add a "nonumbers" class 
+	  to the HTML element.
+	  Adding a class of "fade" will make slides fade into another. 
+	-->
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Your talk title here</title>
+	<!-- 
+	  If you upload your slides to the web, ensure that you have 
+	  a good title - this shows up in search results and social
+	  media links
+	 -->
+	  <meta name="viewport" content="width=device-width, user-scalable=yes">
+	  <link rel="stylesheet" href="assets/styles/style.css">
+	</head>
+	<body class="list">
+	  <header class="caption">
+	    <h1>Your talk title here</h1>
+	    <p class="footer">
+	      Diego Naranjo 
+	      [<a href="https://twitter.com/dnbsevilla">@dnbsevilla</a> or 
+	      <a href="mailto:diego.naranjo@edri.org">diego.naranjo@edri.org</a>]
+	    </p>
+	  </header>
+	  <aside class="talkdescription">
+	    <p>This slide deck is using the shower system - roll over the previews to see the notes and click any slide to go into presentation mode. Then use keys to navigate. <button onclick="goFullScreen()">Go fullscreen</button></p>
+	    <p class="abstract">
+	      <strong>Abstract: </strong>
+	       Add your talk abstract here
+	    </p>
+	  </aside>
 
-<title>Talks by Your_Name</title>
-<head>
-	 <!-- styles -->
-    <link href="assets/styles/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/styles/demo.css" rel="stylesheet">
-    <link href="assets/styles/bootstrap-responsive.min.css" rel="stylesheet">
+	<!-- 
+	    Simply copy the whole block for each slide you want.
+	  Special slides get extra classes. Each slide needs an ID 
+	  to allow for bookmarking and target jumping.
+	-->
 
-     <!-- Add IntroJs styles -->
-    <link href="assets/styles/introjs.css" rel="stylesheet">
+	  <div id="cover" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>The cover slide</h2>
+	      </header>
+	      <img src="images/EDRi_member_map.png" 
+	           class="middle shadow" height="400"
+	           alt="EDRi members map!">
+	      <small class="byline">
+	        Diego Naranjo, Conference, Location, date
+	      </small>
+	      <footer class="notes">
+	         Slide notes goes here. This won's appear on the slides, but it can be seen on the slide deck. Use it to provide more information/ slide transcript, etc. 
+	      </footer>
+	    </section>
+	  </div></div>
 
-    <link href="assets/styles/bootstrap-responsive.min.css" rel="stylesheet">
+	<!-- end slide block -->
 
-</head>
-<body>
-<div class="container-narrow">
-<div class="masthead">
-       <img border="1" style="height: 110px; width: 25%;"class="nav nav-pills pull-right" src="assets/asset-images/edri_logo_WEB.png">
-        <br>
-        <h3 class="muted">European Digital Rights</h3>
-</div>
-<div style="text-align: left;" class="jumbotron">
-	<h2>Your Name</h2>
-  <h5>Your designation</h5>
-	<!-- <h3 class="lead">You too can become a Brussels lobbyist!</h3>
-  <h4>Just fill in the form below.</h4> -->
-</div>
+	  
 
-<p> Your short bio (may be 6-8 lines). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	  <div id="shout" class="slide shout"><div>
+	    <section>
+	      <header>
+	        <h2>
+	          <div class="en-US">Shout slide</div>
+	       
+	        </h2>
+	      </header>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>  
 
-<h5>Here is the list of my talks in reverse chrnological order:</h5>
-
-<dl class="dl-horizontal">
-        <dt>dd-mm-yyyy</dt>
-        <dd>
-          <a href="http://edri.org//your_name/talk_name/">Title of your talk</a>
-          <br> Event, Location
-        </dd> <br>
-
-        
-         <!-- Just copy the following lines (uncomment it first) and edit to a new talk/presentation. -->
-        <!-- <dt>dd-mm-yyyy</dt>
-        <dd>
-          <a href="talk_name/">Title of your talk</a>
-          <br> Event, Location
-        </dd> <br> -->
-
-       <!--  <dt>dd-mm-yyyy</dt>
-        <dd>
-          <a href="www.edri.org/your_name/talk_name/">Title of your talk</a>
-          <br> Event, Location
-        </dd> <br>
-         -->
-        
-</dl>
-
-<p>If you have any queries, feel free to contact me either by sending a mail (your_name @ edri dot org) or via Twitter (<a href="https://twitter.com/your_handle">@your_handle</a>).</p>
+	  <div id="oneline" class="slide oneline"><div>
+	    <section>
+	      <header>
+	        <h2><strong>Imagine</strong>: One line slide</h2>
+	      </header>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>  
 
 
-<!-- <p class="lead">Try it now!</p>
+	  <div id="imageh" class="slide cover w"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (stretched horizontal)</h2>
+	      </header>
+	      <img src="images/EDRi_member_map.png" 
+	           class="middle" 
+	           alt="EDRi members map!">
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
 
-<form style="margin: 0 auto;" action="letter.php" method="post">
-1. Name of your organisation<br>
-<input type="text" name="lobby_organisation"><br>
-2. Issue or topic <br>
-<input type="text" name="topic"><br>
-3. Affected business sector<br>
-<input type="text" name="business_sector"><br>
-4. pick the highest number you can think of<br>
-<input type="number" step="100" min="100" max="10000000000000"> Squizzillion Euro<br>
-5. Pick a country that is unpopular at the moment <br>
-<input type="text" name="country"><br>
-<input class="btn btn-large btn-success" type="submit" value="Create letter">
-</form> -->
+	  <div id="imagev" class="slide cover h"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (stretched vertical)</h2>
+	      </header>
+	      <img src="images/EDRi_member_map.png" 
+	           class="middle" 
+	           alt="Some text">
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
 
+	  <div id="imagemiddle" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (centered, resized)</h2>
+	      </header>
+	      <img src="images/smallphones.jpg" 
+	           class="middle"
+	           alt="Some text">
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	        Introduce yourself, who you are and why you are the person to give that talk
+	      </footer>
+	    </section>
+	  </div></div>
 
-</div>
-</body>
-</html> 
+	  
 
+	  <div id="imageright" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (right)</h2>
+	      </header>
+	      <img src="images/smallphones.jpg" 
+	           class="right" 
+	           alt="Some text">
 
+	      <ul>
+	        <li>Item 1</li>
+	        <li>Item 2</li>
+	        <li>Item 3</li>
+	      </ul>     
+
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	        Introduce yourself, who you are and why you are the person to give that talk
+	      </footer>
+	    </section>
+	  </div></div>
+
+	  <div id="imageleft" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (left)</h2>
+	      </header>
+	      <img src="images/smallphones.jpg" 
+	           class="left" 
+	           alt="Some text">
+
+	      <ul>
+	        <li>Item 1</li>
+	        <li>Item 2</li>
+	        <li>Item 3</li>
+	      </ul>     
+
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	  <div id="imageshadow" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (centered, shadow)</h2>
+	      </header>
+	      <img src="images/smallphones.jpg" 
+	           class="middle shadow"
+	           alt="Some text">
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	  <div id="imageframe" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (framed)</h2>
+	      </header>
+	      <figure class="middle shadow frame">
+	      <img src="images/smallphones.jpg" 
+	           alt="Some text">
+	      </figure>     
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	  <div id="imageswing" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (framed, swinging)</h2>
+	      </header>
+	      <figure class="middle shadow frame swing">
+	      <img src="images/smallphones.jpg" 
+	           alt="Some text">
+	      </figure>     
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	  <div id="imagegif" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (GIF)</h2>
+	      </header>
+	      <img src="images/privacy.gif" 
+	           alt="Earthphases" class="right" width="300">
+	      <p>GIFs animate from the start when the slide shows.</p>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	  <div id="videoswing" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Image slide (video)</h2>
+	      </header>
+	      <video controls class="middle shadow">
+	        <source src="images/wave.mp4" type="video/mp4"></source>
+	        <source src="images/wave.webm" type="video/webm"></source>
+	      </video>
+	      <small class="credits">
+	        <a href="http://www.flickr.com/photos/codepo8/9506545800/">
+	          Image by Chris Heilmann
+	        </a>
+	      </small>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	 	 
+
+	  <div id="numbered" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Numbered list</h2>
+	      </header>
+	      <ol>
+	        <li>Collect underpants</li>
+	        <li>???</li>
+	        <li>Profit</li>
+	      </ol>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	 <div id="list" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Unordered List</h2>
+	      </header>
+	      <ul>
+	        <li>Tigers</li>
+	        <li>Elephants</li>
+	        <li>Bears
+	          <ul>
+	            <li>Koalas</li>
+	            <li>Polar</li>
+	            <li>Panda</li>
+	          </ul>
+	        </li>
+	        <li>Oh my&hellip;</li>
+	      </ul>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	 <div id="orderedlist" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Ordered List</h2>
+	      </header>
+	      <ol>
+	        <li>Tigers</li>
+	        <li>Elephants</li>
+	        <li>Bears
+	          <ol>
+	            <li>Koalas</li>
+	            <li>Polar</li>
+	            <li>Panda</li>
+	          </ol>
+	        </li>
+	        <li>Oh my&hellip;</li>
+	      </ol>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	 <div id="longlist" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Long List</h2>
+	      </header>
+	      <ol class="longlist">
+	        <li>Tigers</li>
+	        <li>Elephants</li>
+	        <li>Bears
+	          <ol>
+	            <li>Koalas</li>
+	            <li>Polar</li>
+	            <li>Panda</li>
+	          </ol>
+	        </li>
+	        <li>Hedgehogs</li>
+	        <li>Opossums</li>
+	        <li>Hyrax</li>
+	        <li>Capybara</li>
+	        <li>Oh my&hellip;</li>
+	      </ol>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	 <div id="inlinelist" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Inline List</h2>
+	      </header>
+	      <ul class="inline">
+	        <li>Tigers</li>
+	        <li>Elephants</li>
+	        <li>Bears</li>
+	        <li>Hedgehogs</li>
+	        <li>Opossums</li>
+	        <li>Hyrax</li>
+	        <li>Capybara</li>
+	        <li>Oh my&hellip;</li>
+	      </ul>
+	      <footer class="notes">moo
+	      </footer>
+	    </section>
+	 </div></div>
+
+	 <div id="animatedlist" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Animated List</h2>
+	      </header>
+	      <ul class="inner">
+	        <li class="active">Tigers</li>
+	        <li>Elephants</li>
+	        <li>Bears</li>
+	        <li>Hedgehogs</li>
+	        <li>Opossums</li>
+	        <li>Hyrax</li>
+	        <li>Capybara</li>
+	        <li>Oh my&hellip;</li>
+	      </ul>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	 </div></div>
+
+	  <div id="onelinelist" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>One line list</h2>
+	      </header>
+	      <ul class="oneline">
+	        <li>Elephants</li>
+	        <li>Aardvarks</li>
+	        <li>Hedgehogs</li>
+	        <li>Kittens</li>
+	        <li>Puppies</li>
+	      </ul>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	  <div id="reallylonglist" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Long list</h2>
+	      </header>
+	      <ul class="lots">
+	        <li>Elephants</li>
+	        <li>Aardvarks</li>
+	        <li>Hedgehogs</li>
+	        <li>Kittens</li>
+	        <li>Puppies</li>
+	        <li>Axolotls</li>
+	        <li>Elephants</li>
+	        <li>Aardvarks</li>
+	        <li>Hedgehogs</li>
+	        <li>Kittens</li>
+	        <li>Puppies</li>
+	        <li>Axolotls</li>
+	        <li>Elephants</li>
+	        <li>Aardvarks</li>
+	        <li>Hedgehogs</li>
+	        <li>Kittens</li>
+	        <li>Puppies</li>
+	        <li>Axolotls</li>
+	        <li>Elephants</li>
+	        <li>Aardvarks</li>
+	        <li>Hedgehogs</li>
+	        <li>Kittens</li>
+	        <li>Puppies</li>
+	        <li>Axolotls</li>
+	        <li>Elephants</li>
+	        <li>Aardvarks</li>
+	        <li>Hedgehogs</li>
+	        <li>Kittens</li>
+	        <li>Puppies</li>
+	        <li>Axolotls</li>
+	      </ul>
+	      <footer class="notes">
+	      </footer>
+	    </section>
+	  </div></div>
+
+	  
+
+	  
+	  <div id="simplequote" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Quote</h2>
+	      </header>
+	      <blockquote>
+	        <p>The worst part of internet quotes is that you can never be sure that they are attributed correctly.</p>
+	        <p class="byline">Benjamin Franklin</p>
+	      </blockquote>
+	      <footer class="notes">
+	      </footer> 
+	    </section>
+	  </div></div>
+
+	  <div id="longquote" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Long quote is long&hellip;</h2>
+	      </header>
+	      <blockquote class="lots">
+	        But there's no doubt that, we went for this approach, <mark>we built this internal framework that we called Faceweb</mark>, which is basically this idea that we can take the infrastructure that we built out for pushing code everyday, building web code on the web stack that we have, and that we can translate that into mobile development. <mark>We just were never able to get the quality of it we wanted</mark>&hellip;
+	      </blockquote>
+	    <footer class="notes">
+	      It seems the main failure was Facebook's approach and internal system creating HTML5 apps - not the technology itself.
+	    </footer>
+	    </section>
+	  </div></div>
+
+	  <div id="thanks" class="slide"><div>
+	    <section>
+	      <header>
+	        <h2>Thanks</h2>
+	      </header>
+	      <img src="assets/asset-images/diego_pic.jpg" height="250" width="250" class="right" alt="Diego Naranjo">
+	      <ul class="nobull">
+	        <li><b>Diego Naranjo</b></li>
+	        <li>Senior Policy Advisor, EDRi</li>
+	        <li><strong>Twitter</strong>: <a href="https://twitter.com/dnbsevilla">@dnbsevilla</a></li>
+	        <li><strong>Slides</strong>: <a href="www.diegonaranjo.eu/talk_name">www.diegonaranjo.eu/talk_name</a></li>
+	      </ul>
+	      <small class="credits">
+	        
+	      </small>
+
+	    <footer class="notes">
+	    </footer>
+
+	    </section>
+	  </div></div>
+
+	  <!--
+	    To hide progress bar from entire presentation
+	    just remove “progress” element.
+	    -->
+	  <div class="progress"><div></div></div>
+	  
+	  <script src="assets/scripts/script.js"></script>
+	  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+	</body>
+	</html>
